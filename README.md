@@ -36,7 +36,6 @@ Authentication is handled using **JWT tokens (Djoser)** and the project includes
 | Component | Technology |
 |------------|-------------|
 | **Backend Framework** | Django 5 + Django REST Framework |
-| **Authentication** | Djoser + JWT |
 | **Database** | SQLite / PostgreSQL |
 | **API Docs** | drf_yasg (Swagger & ReDoc) |
 | **Language** | Python 3.11+ |
