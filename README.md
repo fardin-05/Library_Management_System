@@ -56,3 +56,90 @@ Library_Management_System/
 ├── api / #Book,Author,Member,Category,Borrow Date Management 
 │
 └── requirements.txt
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/fardin-05/Library_Management_System.git
+cd phimart
+```
+### 2️⃣ Create Virtual env
+```bash
+Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate   # On Windows
+source venv/bin/activate  # On macOS/Linux
+```
+### 3️⃣Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4️⃣ Apply migrations
+```bash
+python manage.py migrate
+```
+### 5️⃣ Create superuser
+```bash
+python manage.py createsuperuser
+```
+### 6️⃣ Run the development server
+```bash
+python manage.py runserver
+```
+### Now open your browser at : 
+```bash
+http://127.0.0.1:8000/
+```
+---
+
+### 🧾 API Documentation
+
+**Library Management includes interactive API documentation generated via drf_yasg.**
+
+
+
+
+| Tool | URL |
+| ----------- | ----------- |
+| Swagger | http://127.0.0.1:8000/swagger/ |
+| ReDoc | http://127.0.0.1:8000/redoc/ |
+
+---
+
+
+
+
+### 🧪 Example Environment Variables
+
+**Create a .env file in the root directory:**
+```
+ini
+
+SECRET_KEY=your_secret_key
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
+DATABASE_URL=sqlite:///db.sqlite3
+```
+
+### 📄 License
+---
+
+This project is licensed under the MIT License — feel free to use and modify it.
+
+---
+
+### Author
+
+**Fardin Khan**
+
+*Django Backend Developer*
+
+📧 fardinazim7@gmail.com
+
+🌐 https://fardin-05.github.io
+
+
+⭐ If you like this project, consider giving it a star on GitHub!
