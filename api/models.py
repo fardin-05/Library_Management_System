@@ -12,7 +12,8 @@ class Category(models.Model):
     name = models.CharField(max_length=20)
     def __str__(self):
         return self.name
-
+        
+#===============Book Section===========
 class Book(models.Model):
     name = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
@@ -22,6 +23,8 @@ class Book(models.Model):
     is_available = models.BooleanField(default=True)
     def __str__(self):
         return self.name
+
+#===============Member Section=================
 class Member(models.Model):
     name = models.CharField(max_length=100)
     email =models.EmailField()
@@ -34,6 +37,8 @@ class Member(models.Model):
     )
     def __str__(self):
         return self.name
+
+#===============BorrowRecord Section================
 class BorrowRecord(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='borrow_records')
     member = models.ForeignKey(Member,on_delete=models.CASCADE, related_name='borrow_records')
