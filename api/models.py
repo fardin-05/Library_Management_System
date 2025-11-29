@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 from datetime import timedelta
+
+#==========Author Section=============
 class Author (models.Model):
     name = models.CharField(max_length=20)
     biography = models.CharField(max_length=100)
